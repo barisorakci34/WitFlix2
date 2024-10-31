@@ -1,0 +1,266 @@
+body {
+    padding: 0 1rem;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img.logo {
+    height: 3.5rem;
+}
+
+nav {
+    display: flex;
+    gap:1rem;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color:red;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.search input {
+    padding: 0.3rem 1.8rem 0.3rem 0.5rem;
+    background-image: url("pngwing.com.png");
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: 98% center;
+}
+
+
+img.profile {
+    width: 3rem;
+    border-radius: 100px;
+}
+
+
+/* main */
+main {
+    border: 1px solid black;
+    padding: 1rem;
+    aspect-ratio: 16/9;
+    display: flex;
+    align-items: center;
+}
+
+.movie-info{
+    display: flex;
+    gap:1rem;
+    align-items: center;;
+}
+
+.user-ratings {
+    display: inline-block;
+}
+
+.user-rating i {
+    color: red;
+}
+
+.maturity-rating {
+    border:1px solid black;
+    border-radius: 4px;
+    padding: .2rem;
+}
+
+.movie-description {
+    width: 60%;
+    line-height: 130%;
+}
+
+.movie-details {
+    padding-left: 0;
+}
+
+.movie-details li {
+    list-style-type: none;
+    margin-bottom: .4rem;
+}
+
+.movie-details span {
+    font-weight: bold;
+    color: red;
+}
+
+.btn {
+    border-radius: .5rem;
+    background: red;
+    color: white;
+    display: inline-block;
+    
+}
+
+.btn-lg {
+    padding: .6rem 1rem;
+}
+
+.btn-md {
+    padding: .5rem .9rem;
+    font-size: .9em
+}
+
+/* suggestion */
+
+.suggestion-row {
+    margin: 2rem auto;
+}
+
+.suggestion-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.suggestion-title h2 {
+    font-size: 1.4rem
+}
+
+.suggestion-title a {
+    text-decoration: none;
+    color: black;
+}
+
+.suggestion-title a:hover {
+    color: red;
+}
+
+.suggestion-content {
+    display: flex;
+    justify-content: space-between;;
+}
+
+.suggestion-item {
+    border: 1px solid black;
+    width: 25%;
+    padding: .8rem;
+    display: flex;
+    align-items: flex-end;
+    aspect-ratio: 16/9;
+}
+
+.suggestion-item-content {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.suggestion-item-content h3{
+    margin: 0 .2rem;
+}
+
+/* footer */
+footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.copyright {
+    margin-top: 1rem;
+}
+
+footer > div > p {
+    margin-top:0
+}
+
+.social-media-links div {
+    display: flex;
+    gap: .5rem;
+    padding-top: 1rem;
+}
+
+.fa-square-facebook {
+    color: #1877F2;
+}
+
+.fa-youtube {
+    color: red;
+}
+
+
+.app-store-links div {
+    display: flex;
+    gap: .5rem;
+}
+
+.app-store-links img {
+    max-width: 100px;
+}
+
+
+@media screen and (max-width: 992px){
+    header {
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+        padding: 0 .5rem
+    }
+    header nav {
+        margin: .5rem;
+        order: 1;
+        flex-grow: 1;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px){
+    
+}
+
+@media screen and (max-width: 576px){
+
+    body {
+        padding: 0;
+    }
+
+    header {
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+        padding: 0 .5rem
+    }
+    header nav {
+        margin: .5rem;
+        order: 1;
+        flex-grow: 1;
+        justify-content: center;
+    }
+
+    section {
+        padding: 0 .5rem
+    }
+
+    .suggestion-title h2 {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        padding: .5rem;
+        justify-content: flex-start;
+        padding-bottom: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    header {
+        flex-direction: column;
+    }
+}
